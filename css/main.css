@@ -132,6 +132,9 @@ button {
   height: auto;
   border-radius: 20px;
 }
+.checkbox {
+  padding-left: 10%;
+}
 button:hover {
 	cursor: pointer;
 }
@@ -360,14 +363,14 @@ iframe {
 
 @media (max-width: 992px) {
   .wrap-login100 {
-    padding: 177px 90px 33px 85px;
+    padding: 0px 90px 33px 85px;
   }
 
 }
 
 @media (max-width: 768px) {
   .wrap-login100 {
-    padding: 100px 80px 33px 80px;
+    padding: 0px 80px 33px 80px;
   }
 
 
@@ -378,7 +381,7 @@ iframe {
 
 @media (max-width: 576px) {
   .wrap-login100 {
-    padding: 100px 15px 33px 15px;
+    padding: 0px 15px 33px 15px;
   }
 }
 
