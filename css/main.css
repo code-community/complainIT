@@ -135,6 +135,7 @@ button {
 .checkbox {
   padding-left: 10%;
 }
+
 button:hover {
 	cursor: pointer;
 }
