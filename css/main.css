@@ -136,6 +136,11 @@ button {
   padding-left: 10%;
 }
 
+#message-password-likeness {
+  align-content: center;
+  text-align: center;
+}
+
 button:hover {
 	cursor: pointer;
 }

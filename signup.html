@@ -34,33 +34,61 @@
 						Create account
 					</span>
 
-					<div class="wrap-input100">
+					<div class="wrap-input100 validate-input">
 						<input class="input100" type="name" id="fname" placeholder="First name">
 						<span class="focus-input100"></span>
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-user" aria-hidden="true"></i>
+						</span>
 					</div>
-					<div class="wrap-input100">
+
+					<div class="wrap-input100 validate-input">
 						<input class="input100" type="name" id="lname" placeholder="Last name">
 						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-user" aria-hidden="true"></i>
+						</span>
 					</div>
-					<div class="wrap-input100">
-						<input class="input100" type="text" id="email" placeholder="Email">
+
+					<div class="wrap-input100 validate-input">
+						<input class="input100" type="text" name="email" id="email" placeholder="Email">
 						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
 					</div>
-					<div class="wrap-input100">
-						<input class="input100" type="number" id="phone" placeholder="Email">
+
+					<div class="wrap-input100 validate-input">
+						<input class="input100" type="number" id="phone" placeholder="Phone Number">
 						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+						</span>
 					</div>
+
 					<div class="wrap-input100 validate-input">
 						<input class="input100" type="password" id="pass1" placeholder="Enter password">
 						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+						
 					</div>
 					<div class="wrap-input100 validate-input">
-						<input class="input100" type="password" id="pass2" placeholder="Re-enter password">
+						<input class="input100" type="password" id="pass2" placeholder="Re-enter password" onblur ='check();'>
 						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					
+					</div>
+
+					<div class="wrap-input100 validate-input" id="message-password-likeness" >	
 					</div>
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
+						<button class="login100-form-btn" onmouseover="check();">
 							Sign me up
 						</button>
 					</div>
@@ -77,6 +105,18 @@
 			</div>
 		</div>
 	</div>
+	<script>
+			function check () {
+			if (document.getElementById('pass1').value ==
+				document.getElementById('pass2').value) {
+					document.getElementById('pass2').style.backgroundColor = '#e6e6e6';
+					document.getElementById("message-password-likeness").innerHTML= "";
+			} else {
+				document.getElementById('pass2').style.backgroundColor = 'red';
+				document.getElementById("message-password-likeness").innerHTML= "Passwords do not match";
+			}
+			}
+	</script>
 <!--===============================================================================================-->	
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
