@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body >
+  
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-sm fixed-top theme">
+        <div class="container">
+          <a class="navbar-brand" href="../Homepage.html" >
+              <img src="logo.jpg" class="logo" style="width:50px; height:50px; border-radius: 35px; "> 
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          <div class="collapse navbar-collapse " id="navbarResponsive">
+             
+
+            <ul class="navbar-nav ml-auto theme ">
+              <li class="nav-item active">
+                <a class="nav-link theme" href="../Homepage.html"><b>HOME</b>
+                      </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link theme" href="dashboard.html"><b>DASHBOARD</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link theme" href="#"><b>DEPARTMENTS</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link theme" href="../About.html"><b>ABOUT US</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link theme" href="../faq.html"><b>FAQ's</b></a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+  <!--Navigation Bar-->
+
+    <!--Progress Bars-->
+   <div class="container " style="padding-top:70px;">
+    
+    <div class="row">
+       <div class="col-sm-4">
+       <h3>Department A</h3>
+       <h6>Total complaints</h6>
+       <div class="progress">
+           
+           <div class="progress-bar   progress-one  " style="width:50%; background-color: navy;" id="atotal"></div>
+       
+       </div>
+       
+       <label for="totalA" >Percentage of complaints about this department out of all the complaints in the company/organization</label>
+       </div>
+       <div class="col-sm-4">
+            <h3>Department B</h3>
+            <h6>Total complaints</h6>
+            <div class="progress">
+                
+                <div class="progress-bar   progress-one  " style="width:50%; background-color:navy;" id="btotal"></div>
+            
+            </div>
+            
+            <label for="totalB" >Percentage of complaints about this department out of all the complaints in the company/organization</label>
+            </div>
+            <div class="col-sm-4">
+                    <h3>Department C</h3>
+                    <h6>Total complaints</h6>
+                    <div class="progress">
+                        
+                        <div class="progress-bar   progress-one  " style="width:50%; background-color: navy;" id="ctotal"></div>
+                    
+                    </div>
+                    
+                    <label for="totalC" >Percentage of complaints about this department out of all the complaints in the company/organization</label>
+                    </div>
+   </div> 
+  
+   <div class="row">
+        <div class="col-sm-4">
+        
+        <h6>Addressed complaints</h6>
+        <div class="progress">
+            
+            <div class="progress-bar   progress-two  " style="width:50%; background-color: rgb(2, 2, 150);" id="aadressed"></div>
+        
+        </div>
+        
+        <label for="addressedA" >Percentage of issues that have been addressed in this department </label>
+        </div>
+        <div class="col-sm-4">
+             
+             <h6>Addressed complaints</h6>
+             <div class="progress">
+                 
+                 <div class="progress-bar   progress-two  " style="width:50%; background-color: rgb(2, 2, 150);" id="baddressed"></div>
+             
+             </div>
+             
+             <label for="addressedB" >Percentage of issues that have been addressed in this department </label>
+             </div>
+             <div class="col-sm-4">
+                     
+                     <h6>Addressed complaints</h6>
+                     <div class="progress">
+                         
+                         <div class="progress-bar   progress-two  " style="width:50%;background-color: rgb(2, 2, 150);" id="caddressed"></div>
+                     
+                     </div>
+                     
+                     <label for="addressedC" >Percentage of issues that have been addressed in this department </label>
+                     </div>
+    </div> 
+    <div class="row">
+            <div class="col-sm-4">
+            
+            <h6>Pending complaints</h6>
+            <div class="progress">
+                
+                <div class="progress-bar   progress-three  " style="width:50%; background-color: rgb(2, 2, 170);" id="apending"></div>
+            
+            </div>
+            
+            <label for="pendingA" >Percentage of pending issues  </label>
+            </div>
+            <div class="col-sm-4">
+                 
+                 <h6>Pending complaints</h6>
+                 <div class="progress">
+                     
+                     <div class="progress-bar   progress-three  " style="width:50%; background-color: rgb(2, 2, 170);" id="bpending"></div>
+                 
+                 </div>
+                 
+                 <label for="pendingB" >Percentage of Pending issues </label>
+                 </div>
+                 <div class="col-sm-4">
+                         
+                         <h6>Pending complaints</h6>
+                         <div class="progress">
+                             
+                             <div class="progress-bar   progress-three  " style="width:50%; background-color: rgb(2, 2, 170);" id="cpending"></div>
+                         
+                         </div>
+                         
+                         <label for="pendingC" >Percentage of pending issues </label>
+                         </div>
+        </div> 
+    <div class="row">
+            <div class="col-sm-4">
+            
+            <h6>Unaddressed complaints</h6>
+            <div class="progress">
+                
+                <div class="progress-bar   progress-four" style="width:70%; background-color: rgb(4, 4, 194);" id="areject"></div>
+            
+            </div>
+            
+            <label for="rejectedA" >Percentage of overdue issues that have <b>not</b> been addressed </label>
+            </div>
+            <div class="col-sm-4">
+                 
+                 <h6>Unaddressed complaints</h6>
+                 <div class="progress">
+                     
+                     <div class="progress-bar   progress-four" style="width:30%; background-color: rgb(4, 4, 194);" id="breject"></div>
+                 
+                 </div>
+                 
+                 <label for="rejectedB" >Percentage of overdue issues that have <b>not</b> been addressed </label>
+                 </div>
+                 <div class="col-sm-4">
+                         
+                         <h6>Unaddressed complaints</h6>
+                         <div class="progress">
+                             
+                             <div class="progress-bar   progress-four" style="width:45%;background-color: rgb(4, 4, 194);" id="creject"></div>
+                         
+                         </div>
+                         
+                         <label for="rejectedC" >Percentage of overdue issues that have <b>not</b> been addressed </label>
+                         </div>
+        </div>
+       
+             
+   </div>
+  <div class="container" style="padding-top:50px">
+      <div class="row">
+          <div class="col-sm-4">
+              <div class="card " style="border-color:black;">
+                  <div class="card-header theme " style="background-color:rgb(3, 3, 68); color: white;" >
+Department A
+                  </div>
+                  <div class="card-body">
+                        <h6>Complaints per week<span  class="badge badge-primary" style="float:right;">33</span></h6> 
+                        <h6>Complaints within department<span  class="badge badge-secondary" style="float:right;">11</span></h6> 
+                        <h6>Complaints to other departments<span  class="badge badge-warning" style="float:right;">22</span></h6>   
+                  </div>
+                  
+              </div>
+          </div>
+          <div class="col-sm-4">
+                <div class="card" style="  border-color:black;">
+                    <div class="card-header " style="background-color:rgb(3, 3, 68); color: white;" >
+  Department B
+                    </div>
+                    <div class="card-body">
+                          <h6>Complaints per week<span  class="badge badge-primary" style="float:right;">33</span></h6> 
+                          <h6>Complaints within department<span  class="badge badge-secondary" style="float:right;">11</span></h6> 
+                          <h6>Complaints to other departments<span  class="badge badge-warning" style="float:right;">22</span></h6>   
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-sm-4">
+                    <div class="card " style="  border-color:black;">
+                        <div class="card-header" style="background-color:rgb(3, 3, 68); color: white;" >
+      Department C
+                        </div>
+                        <div class="card-body">
+                              <h6>Complaints per week<span  class="badge badge-primary" style="float:right;">33</span></h6> 
+                              <h6>Complaints within department<span  class="badge badge-secondary" style="float:right;">11</span></h6> 
+                              <h6>Complaints to other departments<span  class="badge badge-warning" style="float:right;">22</span></h6>   
+                        </div>
+                        
+                    </div>
+                </div>
+      </div>
+  </div>
+<br/>
+  <!-- Footer -->
+<footer class="font-small" style="background-color:rgb(3, 3, 68)"> 
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left ">  
+  
+      <!-- Grid row -->
+      <div class="row d-flex align-items-center ">
+  
+        <!-- Grid column -->
+        <div class="col-md-7 col-lg-8 ">
+  
+          <!--Copyright-->
+          <p class="text-center text-md-left">© 2019 Copyright:
+            <a href="#">
+              <strong> ComplainAndSuggestions.com</strong>
+            </a>
+          </p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-5 col-lg-4 ml-lg-0">
+  
+          <!-- Social buttons -->
+          <div class="text-center text-md-right">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fab fa-google-plus-g"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+  </footer>
+  <!-- Footer -->
+</body>
+</html>

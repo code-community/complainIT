@@ -1,0 +1,18 @@
+.theme{
+    color: white;
+    background-color: rgb(3, 3, 68);
+}
+.progress-one{
+    background-color: teal;
+
+}
+.progress-two{
+    background-color: rgb(2, 145, 145);
+}
+.progress-three{
+    background-color: rgb(4, 196, 196);
+}
+.progress-four{
+    background-color: rgb(4, 226, 226);
+}
+

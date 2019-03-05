@@ -1,0 +1,225 @@
+ <!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Post Complaint</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="main.js"></script>
+</head>
+<body style="padding-top:10%;">
+  <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-lg theme fixed-top ">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+              <img src="logo.jpg" class="logo" style="width:60px; height:60px; border-radius: 35px;"> 
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          <div class="collapse navbar-collapse theme" id="navbarResponsive">
+             
+
+            <ul class="navbar-nav ml-auto ">
+              <li class="nav-item active">
+                <a class="nav-link theme" href="#"><b>HOME</b>
+                      </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link theme" href="#"><b>DASHBOARD</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link theme" href="#"><b>DEPARTMENTS</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link theme" href="#"><b>ABOUT US</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link theme" href="#"><b>FAQ's</b></a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+  <!--Navigation Bar-->
+        
+        <div class="container">
+                <h4>Please type your complaint details below...</h4>
+        </div>
+   <div class="container mx-auto" style="padding-top:25px; ">
+   <div class="row">
+       
+       <div class="col-sm-7">
+           <div class="form-group">
+               
+               <input type="text" class="form-control" id="title" placeholder="Title/Heading of complaint" style="border-radius:20px;">
+           </div>
+        </div>
+       </div>
+       <div class="row">
+       <div class="col-sm-7">
+           <div class="form-group">
+               
+               <input type="text" class="form-control" id="name" placeholder="Name(Optional)" style="border-radius:20px;">
+           </div>
+       </div>
+    </div>
+    <div class="form-inline">
+        <div class="col-sm-4">
+    <div class="dropdown">
+        <button type="button" class="btn btn-default dropdown-toggle rounded" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border-radius:20px;">Complainant's Department</button>
+        <div class="dropdown-menu" aria-labelledby="ComplaintFrom">
+            <a class="dropdown-item" href="#">Department A</a>
+            <a class="dropdown-item" href="#">Department B</a>
+            <a class="dropdown-item" href="#">Department C</a>
+            <a class="dropdown-item" href="#">Department D</a>
+        </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+    <div class="dropdown">
+        <button type="button" class="btn btn-default dropdown-toggle rounded" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border-radius:20px;">Complaint directed to...</button>
+        <div class="dropdown-menu" aria-labelledby="ComplaintTo">
+            <a class="dropdown-item" href="#">Department A</a>
+            <a class="dropdown-item" href="#">Department B</a>
+            <a class="dropdown-item" href="#">Department C</a>
+            <a class="dropdown-item" href="#">Department D</a>
+        </div>
+    </div>
+</div>
+</div>
+   </div>
+   <div class="container" style="padding-top:40px; padding-left: 50px; ">
+    <div class="form-check-inline">
+        <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optpublic" id="optpublic" >Public
+        </label>
+        
+    </div>
+    <div class="form-check-inline">
+            <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optprivate" id="optpublic" >Private
+            </label>
+            
+        </div>
+</div>
+<div class="container" style="padding-top:40px; padding-left: 50px; ">
+    <div class="form-check-inline">
+        <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optpublic" id="optpublic" >Ananoymous
+        </label>
+        
+    </div>
+    <div class="form-check-inline">
+            <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optprivate" id="optpublic" >Known
+            </label>
+            
+        </div>
+</div>
+<div class="container mx-auto" style="padding-top:50px; padding-left: 50; ">
+   <div class="form-group">
+       
+       <textarea class="form- control rounded" rows="6" cols="95" id="complaint" placeholder="Type your complaint here..." style="border-radius:20px;"></textarea>
+   </div>   
+   </div>
+   <div class="container mx-auto" style="padding-top:0px;padding-left: 250px; padding-bottom: 30px;">
+       <div class="form-check">
+         <label class="form-check-label">
+           <input type="radio" class="form-check-input" name="" id="firstcomplaint" >
+           I am complaining about this for the first time
+         </label>
+       </div>
+       <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="" id="rejectedcomplaint" >
+              My first complaint was not responded to at all
+            </label>
+          </div>
+          <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="" id="notenoughcomplaint">
+                  My first complaint was not addressed to my satisfaction
+                </label>
+              </div>
+
+       </div>
+       <button type="button" class="btn  mx-auto d-block" id="post" style="background-color:teal">POST</button>
+   </div>
+   <br/>
+   <!-- Footer -->
+<footer class="page-footer font-small  pt-4 theme"> 
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left theme">
+
+    <!-- Footer links -->
+    
+    <!-- Footer links -->
+
+    <hr>
+
+    <!-- Grid row -->
+    <div class="row d-flex align-items-center">
+
+      <!-- Grid column -->
+      <div class="col-md-7 col-lg-8">
+
+        <!--Copyright-->
+        <p class="text-center text-md-left">© 2019 Copyright:
+          <a href="#">
+            <strong> ComplainAndSuggestions.com</strong>
+          </a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-5 col-lg-4 ml-lg-0">
+
+        <!-- Social buttons -->
+        <div class="text-center text-md-right">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fab fa-google-plus-g"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+</footer>
+<!-- Footer -->
+</body>
+</html>
