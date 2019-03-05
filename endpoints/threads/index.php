@@ -83,12 +83,15 @@ function viewDepartment($conn)
     }
     else {
         $outp = array();
-        $outp += $result->fetch_all(MYSQLI_ASSOC);
+        $outpC = array('code' => 200, 'state' => 'success', 'message' => 'Threads are available');
+        $outp += array('code'=>$outpC,"data"=>$result->fetch_all(MYSQLI_ASSOC));
         header('Content-type: application/json');
         echo json_encode($outp);
     }
 }
 function showMessage()
 {
-    echo "<center><h1>This will just load the page!</h1></center>";
+    $arr = array('code' => 100, 'state' => 'success', 'message' => 'Shows the available endpoints.','action'=>'create/view/delete','name'=>'Place name here','description'=>'Place description here', 'example1'=>'/threads/?action=view');
+    header('Content-type: application/json');
+    echo json_encode($arr);
 }

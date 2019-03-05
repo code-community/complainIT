@@ -74,7 +74,7 @@ function createDepartment($conn)
 
 function viewDepartment($conn)
 {
-    $sql = "SELECT * FROM notifications";
+    $sql = "SELECT * FROM user_type";
     $result  = $conn -> query($sql);
     if($result->num_rows==0){
         $arr = array('code' => 300, 'state' => 'empty', 'message' => 'There are no records to show.');
@@ -83,12 +83,15 @@ function viewDepartment($conn)
     }
     else {
         $outp = array();
-        $outp += $result->fetch_all(MYSQLI_ASSOC);
+        $outpC = array('code' => 200, 'state' => 'success', 'message' => 'User Types are available');
+        $outp += array('code'=>$outpC,"data"=>$result->fetch_all(MYSQLI_ASSOC));
         header('Content-type: application/json');
         echo json_encode($outp);
     }
 }
 function showMessage()
 {
-    echo "<center><h1>This will just load the page!</h1></center>";
+    $arr = array('code' => 200, 'state' => 'success', 'message' => 'Shows the available endpoints.','action'=>'create/view/delete','name'=>'Place name here','description'=>'Place description here', 'example1'=>'/userTypes/?action=view');
+    header('Content-type: application/json');
+    echo json_encode($arr);
 }
